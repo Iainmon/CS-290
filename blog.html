@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Iain Moncrief - Code BLog</title>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top"></div>
+    <div class="container">
+        <br>
+        <div class="d-flex justify-content-between">
+            <h2 class="display-2">My Blog - Iain Moncrief</h2>
+            <a href="./index.html" role="button" class="btn btn-outline-light btn-sm">
+                <b><span>H</span>
+                <br>
+                <span>o</span>
+                <br>
+                <span>m</span>
+                <br>
+                <span>e</span>
+                </b>
+            </a>
+        </div>
+        <br>
+        
+<hr><div class="row">
+<div class="d-flex justify-content-between "><h5 class="display-5">Assignment 2</h5><h6 class="display-6">April 26, 2021</h6></div>
+<ul><li><b>What was challenging about the assignment, and what specific kinds of problems did you have.  How did you solve those problems?</b></li>
+<li><p>The most challenging part was styling the premade HTML file using only CSS. Usually I am able to use CSS and throw in HTML div spacers, but I had to do everything by hand.
+It was certainly challenging, but I feel like I learned a lot about CSS I didn't know!
+</p></li>
+</ul>
+<ul><li><b>What are one or two things you had to Google to complete the assignment?</b></li>
+<li><p>I had to research flexboxes quite a bit. Specifically, how to pull an inline flex item all the way to the right, while the other siblings are pulled to the left.
+I also needed to lean how to make a shadow (for the create twit button).
+</p></li>
+</ul>
+
+</div>
+
+<hr><div class="row">
+<div class="d-flex justify-content-between "><h5 class="display-5">Assignment 1</h5><h6 class="display-6">April 12, 2021</h6></div>
+<ul><li><b>What challenges or troubles did you have completing this assignment. How did you work through them?</b></li>
+<li><p>I wanted to get some bouncy text working, but the easiest solution that I found required me to write <<code>span</code>> tags for each character I wanted to animate.
+I also needed to compute and write a keyframe for each n/1s, n times, where n is the number of characters in the string that I wanted to animate.
+I got around this by writing a Haskell script that would parse my input string and give me the HTML and CSS for my desired animation.
+</p></li>
+</ul>
+<ul><li><b>What did you learn from this assignment? What did you already know?</b></li>
+<li><p>I have almost four years amount of full-stack experience, but I did learn more about the Bootstrap 5 framework.
+I wasn't aware that Bootstrap had classes for images, that turned out to be usefull.
+</p></li>
+</ul>
+<ul><li><b>What resources (e.g. specific web articles, the class Piazza forum, the TAs) were most helpful in completing this assignment? How did you use these resources?</b></li>
+<li><p>I asked the Campuswire forum about if it were possible to use other technologies such as Typescript or React.
+Some students were helpful and pointed me to the sylabus, and Professor Hess was able to answer my question.
+</p></li>
+</ul>
+
+</div>
+
+
+
+    </div>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            background: #FF7777;
+            -webkit-font-smoothing: antialiased;
+            /*display: flex;*/
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ee5279, #e7b93c, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 25s ease infinite;
+            font-size: 0.85em;
+        }
+
+        body {
+            background: transparent;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</body>
+</html>

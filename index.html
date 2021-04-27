@@ -1,0 +1,417 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Iain Moncrief - Assignment 1</title>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top"></div>
+    <div class="container">
+        <br>
+        <!-- <h1 class="display-1">Iain Moncrief</h1> -->
+        <div class="d-flex justify-content-between">
+            <h1 class="display-1">Iain Moncrief</h1>
+            <a href="./blog.html" role="button" class="btn btn-outline-light btn-sm">
+                <b><span>B</span>
+                <br>
+                <span>l</span>
+                <br>
+                <span>o</span>
+                <br>
+                <span>g</span>
+                </b>
+            </a>
+        </div>
+        <p>You may reach me by email via <code style="color: rgb(255, 216, 110); font-size: 18px;">moncrief@oregonnstate.edu</code>. I am a freshman, and majoring in</p>
+        <br>
+        <div class="major">
+            <h2>
+                <span>C</span>
+                <span>o</span>
+                <span>m</span>
+                <span>p</span>
+                <span>u</span>
+                <span>t</span>
+                <span>e</span>
+                <span>r</span>
+                <span> </span>
+                <span>S</span>
+                <span>c</span>
+                <span>i</span>
+                <span>e</span>
+                <span>n</span>
+                <span>c</span>
+                <span>e</span>
+                <span> </span>
+                <span>a</span>
+                <span>n</span>
+                <span>d</span>
+                <span> </span>
+                <span>M</span>
+                <span>a</span>
+                <span>t</span>
+                <span>h</span>
+                <span>e</span>
+                <span>m</span>
+                <span>a</span>
+                <span>t</span>
+                <span>i</span>
+                <span>c</span>
+                <span>s</span>
+                <span>!</span>
+            </h2>
+        </div>
+        <dl class="row">
+            <dt class="col-sm-3">EnviroQuest Inc. Project Manager</dt>
+            <dd class="col-sm-9">A database driven application written in the Laravel PHP framework. It managed clients, projects, and lab reports for a small environmental consulting company.</dd>              
+            <dt class="col-sm-3">The Happy Bento API</dt>
+            <dd class="col-sm-9">An REST API written with the MERN stack for a food service company. It would send the clients text messages about their order status and delivery whereabout.</dd>
+            <dt class="col-sm-3">Network Game</dt>
+            <dd class="col-sm-9">An Agar.io like, prof of concept, multiplayer browser game using matter.js and WebSockets. Players could jump and collide with each other.</dd>                            
+        </dl>
+        <div class="row">
+            <div class="col-sm-6">
+                <ul>
+                    <li><p>I hope to better understand the workflow for industry scale web apps.</p></li>
+                    <li><p>I have signed up for Campuswire.</p></li>
+                    <li><p><b>An interesting fact about me</b> is that I went to a highschool where everyone had a learning disability. Mine was Dyslexia and Dysgraphia.</p></li>
+                </ul>
+            </div>
+            <div class="text-center col-sm-6">
+                <h4 class="display-5">Post diving shot of me</h4>
+                <img src="./me.jpg" class="rounded" style="width: 500px; height: auto;" >
+            </div>
+
+        </div>
+    </div>
+
+
+    <style>
+        html,
+        html {
+            width: 100%;
+            height: 100%;
+            background: #FF7777;
+            -webkit-font-smoothing: antialiased;
+            /*display: flex;*/
+            justify-content: center;
+            align-items: center;
+            /* background: linear-gradient(-45deg, #ee5279, #e7b93c, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 25s ease infinite; */
+            font-size: 0.85em;
+        }
+
+        body {
+            background: transparent;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .major h2 {
+            height: 100px;
+        }
+
+
+        .major h2 span {
+            position: relative;
+            top: 20px;
+            display: inline-block;
+            animation: bounce .3s ease infinite alternate;
+            /*font-family: 'Titan One', cursive;*/
+            font-family: monospace;
+            font-size: 40px;
+            color: #FFF;
+            text-shadow: 0 1px 0 #CCC,
+                0 2px 0 #CCC,
+                0 3px 0 #CCC,
+                0 4px 0 #CCC,
+                0 5px 0 #CCC,
+                0 6px 0 transparent,
+                0 7px 0 transparent,
+                0 8px 0 transparent,
+                0 9px 0 transparent,
+                0 10px 10px rgba(0, 0, 0, .4);
+        }
+
+        /* h1 span:nth-child(2) { animation-delay: .1s; }
+        h1 span:nth-child(3) { animation-delay: .2s; }
+        h1 span:nth-child(4) { animation-delay: .3s; }
+        h1 span:nth-child(5) { animation-delay: .4s; }
+        h1 span:nth-child(6) { animation-delay: .5s; }
+        h1 span:nth-child(7) { animation-delay: .6s; }
+        h1 span:nth-child(8) { animation-delay: .7s; } */
+        .major h2 span:nth-child(2) {
+            animation-delay: 0.067s;
+        }
+
+        .major h2 span:nth-child(3) {
+            animation-delay: 0.100s;
+        }
+
+        .major h2 span:nth-child(4) {
+            animation-delay: 0.133s;
+        }
+
+        .major h2 span:nth-child(5) {
+            animation-delay: 0.167s;
+        }
+
+        .major h2 span:nth-child(6) {
+            animation-delay: 0.200s;
+        }
+
+        .major h2 span:nth-child(7) {
+            animation-delay: 0.233s;
+        }
+
+        .major h2 span:nth-child(8) {
+            animation-delay: 0.267s;
+        }
+
+        .major h2 span:nth-child(9) {
+            animation-delay: 0.300s;
+        }
+
+        .major h2 span:nth-child(10) {
+            animation-delay: 0.333s;
+        }
+
+        .major h2 span:nth-child(11) {
+            animation-delay: 0.367s;
+        }
+
+        .major h2 span:nth-child(12) {
+            animation-delay: 0.400s;
+        }
+
+        .major h2 span:nth-child(13) {
+            animation-delay: 0.433s;
+        }
+
+        .major h2 span:nth-child(14) {
+            animation-delay: 0.467s;
+        }
+
+        .major h2 span:nth-child(15) {
+            animation-delay: 0.500s;
+        }
+
+        .major h2 span:nth-child(16) {
+            animation-delay: 0.533s;
+        }
+
+        .major h2 span:nth-child(17) {
+            animation-delay: 0.567s;
+        }
+
+        .major h2 span:nth-child(18) {
+            animation-delay: 0.600s;
+        }
+
+        .major h2 span:nth-child(19) {
+            animation-delay: 0.633s;
+        }
+
+        .major h2 span:nth-child(20) {
+            animation-delay: 0.667s;
+        }
+
+        .major h2 span:nth-child(21) {
+            animation-delay: 0.700s;
+        }
+
+        .major h2 span:nth-child(22) {
+            animation-delay: 0.733s;
+        }
+
+        .major h2 span:nth-child(23) {
+            animation-delay: 0.767s;
+        }
+
+        .major h2 span:nth-child(24) {
+            animation-delay: 0.800s;
+        }
+
+        .major h2 span:nth-child(25) {
+            animation-delay: 0.833s;
+        }
+
+        .major h2 span:nth-child(26) {
+            animation-delay: 0.867s;
+        }
+
+        .major h2 span:nth-child(27) {
+            animation-delay: 0.900s;
+        }
+
+        .major h2 span:nth-child(28) {
+            animation-delay: 0.933s;
+        }
+
+        .major h2 span:nth-child(29) {
+            animation-delay: 0.967s;
+        }
+
+        .major h2 span:nth-child(30) {
+            animation-delay: 1.000s;
+        }
+
+        *Main>putStrLn $ bounceFrames 35 .major h2 span:nth-child(2) {
+            animation-delay: 0.057s;
+        }
+
+        .major h2 span:nth-child(3) {
+            animation-delay: 0.086s;
+        }
+
+        .major h2 span:nth-child(4) {
+            animation-delay: 0.114s;
+        }
+
+        .major h2 span:nth-child(5) {
+            animation-delay: 0.143s;
+        }
+
+        .major h2 span:nth-child(6) {
+            animation-delay: 0.171s;
+        }
+
+        .major h2 span:nth-child(7) {
+            animation-delay: 0.200s;
+        }
+
+        .major h2 span:nth-child(8) {
+            animation-delay: 0.229s;
+        }
+
+        .major h2 span:nth-child(9) {
+            animation-delay: 0.257s;
+        }
+
+        .major h2 span:nth-child(10) {
+            animation-delay: 0.286s;
+        }
+
+        .major h2 span:nth-child(11) {
+            animation-delay: 0.314s;
+        }
+
+        .major h2 span:nth-child(12) {
+            animation-delay: 0.343s;
+        }
+
+        .major h2 span:nth-child(13) {
+            animation-delay: 0.371s;
+        }
+
+        .major h2 span:nth-child(14) {
+            animation-delay: 0.400s;
+        }
+
+        .major h2 span:nth-child(15) {
+            animation-delay: 0.429s;
+        }
+
+        .major h2 span:nth-child(16) {
+            animation-delay: 0.457s;
+        }
+
+        .major h2 span:nth-child(17) {
+            animation-delay: 0.486s;
+        }
+
+        .major h2 span:nth-child(18) {
+            animation-delay: 0.514s;
+        }
+
+        .major h2 span:nth-child(19) {
+            animation-delay: 0.543s;
+        }
+
+        .major h2 span:nth-child(20) {
+            animation-delay: 0.571s;
+        }
+
+        .major h2 span:nth-child(21) {
+            animation-delay: 0.600s;
+        }
+
+        .major h2 span:nth-child(22) {
+            animation-delay: 0.629s;
+        }
+
+        .major h2 span:nth-child(23) {
+            animation-delay: 0.657s;
+        }
+
+        .major h2 span:nth-child(24) {
+            animation-delay: 0.686s;
+        }
+
+        .major h2 span:nth-child(25) {
+            animation-delay: 0.714s;
+        }
+
+        .major h2 span:nth-child(26) {
+            animation-delay: 0.743s;
+        }
+
+        .major h2 span:nth-child(27) {
+            animation-delay: 0.771s;
+        }
+
+        .major h2 span:nth-child(28) {
+            animation-delay: 0.800s;
+        }
+
+        .major h2 span:nth-child(29) {
+            animation-delay: 0.829s;
+        }
+
+        .major h2 span:nth-child(30) {
+            animation-delay: 0.857s;
+        }
+
+        .major h2 span:nth-child(31) {
+            animation-delay: 0.886s;
+        }
+
+        .major h2 span:nth-child(32) {
+            animation-delay: 0.914s;
+        }
+
+        .major h2 span:nth-child(33) {
+            animation-delay: 0.943s;
+        }
+
+        .major h2 span:nth-child(34) {
+            animation-delay: 0.971s;
+        }
+
+        .major h2 span:nth-child(35) {
+            animation-delay: 1.000s;
+        }
+
+        @keyframes bounce {
+            100% {
+                top: -20px;
+                text-shadow: 0 1px 0 #CCC,
+                    0 2px 0 #CCC,
+                    0 3px 0 #CCC,
+                    0 4px 0 #CCC,
+                    0 5px 0 #CCC,
+                    0 6px 0 #CCC,
+                    0 7px 0 #CCC,
+                    0 8px 0 #CCC,
+                    0 9px 0 #CCC,
+                    0 50px 25px rgba(0, 0, 0, .2);
+            }
+        }
+    </style>
+
+</body>
+
+</html>
