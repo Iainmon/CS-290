@@ -103,5 +103,34 @@ blog = reverse [
                     ,"I also needed to lean how to make a shadow (for the create twit button)."
                 ])
             ]
+        },
+        Entry {
+            title="Assignment 3",
+            date="May 10, 2021",
+            questions=[
+                ("What was challenging about the assignment, and what specific kinds of problems did you have.  How did you solve those problems?"
+                , unlines [
+                    "The most challenging part of this assignment was deciding what level of abstraction I should use to design my rendering system. "
+                    ,"Since searching required the nodes be removed (not just hidden) from the DOM, I needed a way to store them so that they could be added back in when a user searched for something else. "
+                    ,"I considered saving each twit element and removing it from the DOM using <code>.remove()</code>, but keeping it in memory. Then whenever a new twit is created, I would clone a twit and add it to the list, as well as the DOM."
+                    ,"I decided against this because searching would require quite a bit of accesses for each twit element in memory, and didn't resemble the architecture of most front-end frameworks (e.g. React). "
+                    ,"Instead, once the page loads, I save the twit & author pairs to a list of <code>{ content: '...', author: '...' }</code> objects, clone a copy of the first twit in order to use as a template for new twits, and clear and re-render the page when any search happens."
+                    ,"This isn't the fastest solution since new nodes are being created on every key press, but could very well be optimized just by using a list of cached DOM objects that would mirror the list of twit & author pairs."
+                ]),
+                ("What did you learn from the assignment?  Were there any special insights you had?  What did you find that you already knew?"
+                , unlines [
+                    "I learned that <code>.querySelector('.className')</code> returns the first element with that class name. "
+                    ,"One insight was to apply functional programming concepts to my code in order to make it more readable. For example, <code> const show = id => document.getElementById(id).classList.remove('hidden') </code> made my code much more readable."
+                    ,"It was helpful that I already had a good understanding of event listeners since they allowed me to not have to write so much code and specialize the site behaviors."
+                ]),
+                ("What kinds of resources were helpful for completing the assignment?  Specific websites?  Lectures?  The class Piazza forum?  The TAs?  How did you use each of these resources?"
+                , unlines [
+                    "Lucas was very speedy when answering a small grading question, and CampusWire served me well when I needed clarification about a requirement."
+                ]),
+                ("What are one or two things you had to Google to complete the assignment?"
+                , unlines [
+                    "I had to consult Mr. Google about Javascript's <code>string.trim()</code> functionality and <code>node.remove()</code> since I lacked a clear understanding of the functions."
+                ])
+            ]
         }
     ]

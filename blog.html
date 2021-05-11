@@ -26,6 +26,34 @@
         <br>
         
 <hr><div class="row">
+<div class="d-flex justify-content-between "><h5 class="display-5">Assignment 3</h5><h6 class="display-6">May 10, 2021</h6></div>
+<ul><li><b>What was challenging about the assignment, and what specific kinds of problems did you have.  How did you solve those problems?</b></li>
+<li><p>The most challenging part of this assignment was deciding what level of abstraction I should use to design my rendering system. 
+Since searching required the nodes be removed (not just hidden) from the DOM, I needed a way to store them so that they could be added back in when a user searched for something else. 
+I considered saving each twit element and removing it from the DOM using <code>.remove()</code>, but keeping it in memory. Then whenever a new twit is created, I would clone a twit and add it to the list, as well as the DOM.
+I decided against this because searching would require quite a bit of accesses for each twit element in memory, and didn't resemble the architecture of most front-end frameworks (e.g. React). 
+Instead, once the page loads, I save the twit & author pairs to a list of <code>{ content: '...', author: '...' }</code> objects, clone a copy of the first twit in order to use as a template for new twits, and clear and re-render the page when any search happens.
+This isn't the fastest solution since new nodes are being created on every key press, but could very well be optimized just by using a list of cached DOM objects that would mirror the list of twit & author pairs.
+</p></li>
+</ul>
+<ul><li><b>What did you learn from the assignment?  Were there any special insights you had?  What did you find that you already knew?</b></li>
+<li><p>I learned that <code>.querySelector('.className')</code> returns the first element with that class name. 
+One insight was to apply functional programming concepts to my code in order to make it more readable. For example, <code> const show = id => document.getElementById(id).classList.remove('hidden') </code> made my code much more readable.
+It was helpful that I already had a good understanding of event listeners since they allowed me to not have to write so much code and specialize the site behaviors.
+</p></li>
+</ul>
+<ul><li><b>What kinds of resources were helpful for completing the assignment?  Specific websites?  Lectures?  The class Piazza forum?  The TAs?  How did you use each of these resources?</b></li>
+<li><p>Lucas was very speedy when answering a small grading question, and CampusWire served me well when I needed clarification about a requirement.
+</p></li>
+</ul>
+<ul><li><b>What are one or two things you had to Google to complete the assignment?</b></li>
+<li><p>I had to consult Mr. Google about Javascript's <code>string.trim()</code> functionality and <code>node.remove()</code> since I lacked a clear understanding of the functions.
+</p></li>
+</ul>
+
+</div>
+
+<hr><div class="row">
 <div class="d-flex justify-content-between "><h5 class="display-5">Assignment 2</h5><h6 class="display-6">April 26, 2021</h6></div>
 <ul><li><b>What was challenging about the assignment, and what specific kinds of problems did you have.  How did you solve those problems?</b></li>
 <li><p>The most challenging part was styling the premade HTML file using only CSS. Usually I am able to use CSS and throw in HTML div spacers, but I had to do everything by hand.
