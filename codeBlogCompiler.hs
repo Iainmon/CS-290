@@ -132,5 +132,26 @@ blog = reverse [
                     "I had to consult Mr. Google about Javascript's <code>string.trim()</code> functionality and <code>node.remove()</code> since I lacked a clear understanding of the functions."
                 ])
             ]
+        },
+        Entry {
+            title="Assignment 4",
+            date="May 17, 2021",
+            questions=[
+                ("What did you learn from the assignment?  Were there any special insights you had?  What did you find that you already knew?"
+                , unlines [
+                    "I learned quite a bit about error handling with Promises. I have worked with JavaScript's Promise functionality quite a bit in the past, but I realized I have been making a some fundamental assumptions. "
+                    ,"I assumed that Promises followed the axioms of Monads, and behaved very similar to the Maybe monad. This was incorrect. I learned that when handling errors with the <code>.catch( e => ...)</code> method, the Promise object that it returns is not handled by any other <code>.catch( e => ...)</code>."
+                    ,"This was an issue for me since I wanted to compose two different behaviors for my server: if there was an error, if everything went smoothly."
+                    ,"Once I noticed this, I fixed my code by adding the identity transformation for errors: <code>x => {throw x;}</code>. When used in a .catch handler, the program logic will remain inside the <code>.catch(...)</code> handlers."
+                    ,"After getting my original program to work, I wanted to try to make my program into one large expression, using only promises, and no <code>const, var, let</code> variable assignments. "
+                    ,"I didn't think it could be done since there needs to be a mutable state somewhere in the code to store the loaded in files, but then I remembered JavaScript uses pass-by-reference for non-primitives. "
+                    ,"Using this, I just declared a <code>new Map()</code> and passed it into a lambda that would bind it to the scope so I could mutate it."
+                ]),
+                ("What are one or two things you had to Google to complete the assignment?"
+                , unlines [
+                    "I googled the Mozilla documentation for Promises so I could learn more about them."
+                    ,"I also looked up the standard MIME types because I tend to forget them. "
+                ])
+            ]
         }
     ]
