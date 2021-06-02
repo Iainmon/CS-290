@@ -153,5 +153,22 @@ blog = reverse [
                     ,"I also looked up the standard MIME types because I tend to forget them. "
                 ])
             ]
+        },
+        Entry {
+            title="Assignment 5",
+            date="June 1, 2021",
+            questions=[
+                ("What was challenging about the assignment, and what specific kinds of problems did you have. How did you solve those problems?"
+                , unlines [
+                    "This assignment was quite challenging due the way Handlebars searches for views and templates. It took me a while to figure out how to properly configure my file system and get everything working."
+                    ,"I also found that there is very little information provided on the handlebars-express package and it was difficult to figure out how to tie everything together."
+                    ,"Watching the lecture videos was helped me figure out my issue."
+                ]),
+                ("What did you learn from the assignment? Were there any special insights you had? What did you find that you already knew?"
+                , unlines [
+                    "I had not used handlebars before this assignment. Already having an understanding of Express.js was very helpful for solving the problems I had."
+                    ,"It was also very important for me to learn the hierarchy of layouts, views, and partials since the terminology changes for every web framework."
+                ])
+            ]
         }
     ]
